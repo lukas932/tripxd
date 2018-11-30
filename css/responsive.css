@@ -1,4 +1,4 @@
-/* lg */ 
+/* lg */
 @media (min-width: 1200px) {
 
 }
@@ -154,7 +154,7 @@
 
 	#fun-facts .fun-fact{
 		border-right: 0px;
-		margin-bottom: 30px;
+		/* margin-bottom: 30px; */
 	}
 
 	#about-us .our-office{
@@ -183,13 +183,102 @@
 		margin-top: 50px;
 	}
 
-
-
 }
 
 /* XS Portrait */
 @media (max-width: 479px) {
 
+}
 
+/* iPhone 5/se */
+@media (max-width: 320px) {
+	#home-carousel .item{
+		height: -webkit-fill-available;
+	}
 
+	.carousel-caption{
+		left: 48px;
+		right: 42px;
+	}
+
+	.card {
+		margin-top: 20px;
+	}
+
+	.listSocialMedia {
+		width: max-content;
+	}
+
+	.listSocialMedia li {
+		width: unset;
+		float: left;
+		margin-right: 5px;
+    margin-top: 5px;
+	}
+
+	.BoxOne, .BlocoDot{
+		margin-top: 20px;
+	}
+
+	#app .container {
+		background: transparent;
+	}
+
+	#app .container .box-radius{
+		margin-top: 30px;
+	}
+
+	#app .container .box-aviation {
+		margin-top: 80px;
+	}
+
+	#app .container .box-descrition p{
+		top: 0;
+	}
+
+	#app .container h6{
+		float: none;
+	}
+
+	/* #earnings #menu1 .tab-content .content .second-box{
+		width: auto;
+	} */
+
+	#earnings #menu2 .box-carrer table tbody tr td:first-child{
+		background: transparent;
+	}
+
+	#earnings #menu3 div{
+		padding: 0px;
+	}
+
+	#earnings #menu3 div.bold-green{
+		margin-top: 20px;
+	}
+
+	.section-title h1.accession span.txt{
+		margin-left: 0;
+		left: 0;
+		font-size: 14px;
+	}
+
+	.boxLoad{
+		margin-top: 60px;
+	}
+
+	.section-title h1.accession, .section-title h1.franchise, .section-title h1.contact{
+		background-size: 100%;
+	}
+
+	.section-title h1.accession img{
+		display: none;
+	}
+
+	.pt-bg-black p span{
+		padding: 0 2px;
+	}
+
+	.pt-bg-blue p{
+		padding: 0 5px 30px;
+	}
 }

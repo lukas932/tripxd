@@ -252,6 +252,10 @@ label {
 	color: #000;
 }
 
+.st-navbar ul li.party a.facaparte{
+	float: left;
+}
+
 .st-navbar ul li a.btMenu {
 	font-family: "Montserrat", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
@@ -267,6 +271,10 @@ label {
 
 .st-navbar ul li a.facaparte {
 	background-color: #fdad31;
+}
+
+.st-navbar ul li.party a.whatsapp{
+	float: right;
 }
 
 .st-navbar ul li a.whatsapp {
@@ -512,8 +520,10 @@ label {
 	background-position: top;
 	background-repeat: repeat-x;
 	padding-top: 130px;
-	padding-bottom: 120px;
+	/* padding-bottom: 120px; */
 	text-align: center;
+	top: -64px;
+	position: relative;
 }
 
 .section-title {
@@ -581,7 +591,7 @@ label {
 	height: 135px;
 	text-indent: -1500000px;
 	font-size: 0;
-	background-size: auto;
+	background-size: 100%;
 	background-repeat: no-repeat;
 }
 
@@ -830,20 +840,23 @@ label {
 }
 
 #app {
-	background: url('../images/bgApp.png') repeat-x bottom;
+	background: url('../images/bgApp.png') repeat-x 0px 103px;
+	background-size: 1px 218px;
 	position: relative;
-	top: 10px;
+	/* top: 10px; */
 	width: 100%;
-	height: 320px;
+	/* height: 320px; */
 	display: inline-block;
+	z-index: 1;
 }
 
 #app .container {
 	/* background-color: #1374e1;
      */
-	background: url('../images/appCel.png') no-repeat bottom left transparent;
+	background: url('../images/appCel.png') no-repeat 13px 1px transparent;
 	background: linear-gradient(left, #000, #000) no-repeat 50px 50px;
-	height: 320px;
+	/* padding-top: 40px; */
+	/* height: 320px; */
 }
 
 #app .container .row {
@@ -875,6 +888,7 @@ label {
 	border-radius: 10px;
 	width: 100%;
 	height: 114px;
+	box-shadow: 0px 0px 76px -23px;
 }
 
 #app .container .box-radius p {
@@ -1043,7 +1057,7 @@ label {
 }
 
 #earnings .tab-content #home div.first-box {
-	height: 690px;
+	/* height: 690px; */
 }
 
 #earnings .tab-content #home div.first-box p {
@@ -1057,7 +1071,7 @@ label {
 #earnings .tab-content #home div.content {
 	box-shadow: 0px 0px 45px -26px #000;
 	background: #fff;
-	height: 630px;
+	/* height: 630px; */
 }
 
 #earnings .tab-content #home h3.title-gold {
@@ -1079,6 +1093,7 @@ label {
 #earnings .tab-content #home strong {
 	width: 95%;
 	text-align: center;
+	line-height: normal;
 	display: inline-block;
 	padding: 20px 0 35px 0;
 	border-bottom: 1px solid #f6f6f6;
@@ -1092,12 +1107,13 @@ label {
 	margin: 60px 0;
 	text-align: center;
 	font-size: 16px;
+	padding: 0px 12px;
 }
 
 #earnings #menu1 .tab-content {
 	border-top: 1px solid #f6f6f6;
 	padding-top: 50px;
-	height: 700px;
+	/* height: 700px; */
 	text-align: center;
 }
 
@@ -1167,10 +1183,17 @@ label {
 
 #earnings #menu1 .tab-content .first-description span {
 	padding: 20px 0px;
-	margin-top: 25px;
+	margin-top: 15px;
 }
 
-#earnings #menu1 .tab-content .first-description .blue {
+#earnings #menu1 .tab-content .first-description .colors {
+	background: url(../images/colors.png) no-repeat center center;
+	background-size: 100%;
+	width: 100%;
+	display: inline-block;
+}
+
+/* #earnings #menu1 .tab-content .first-description .blue {
 	margin-left: 4px;
 	padding-left: 98px;
 	background: #42a0f6;
@@ -1188,19 +1211,13 @@ label {
 	background: #00af3e;
 	padding-left: 240px;
 	float: right;
-}
+} */
 
 #earnings #menu1 .tab-content .content .box-first {
 	padding: 40px;
-	text-align: center;
-	display: block;
 	top: 10px;
 	position: relative;
-	clear: both;
-	left: 19px;
-	width: 472px;
 	box-shadow: 0px 0px 39px -22px #000;
-	color: #aaa8a8;
 }
 
 #earnings #menu1 .tab-content .content .box-first,
@@ -1209,21 +1226,22 @@ label {
 	text-align: center;
 }
 
-#earnings #menu1 .tab-content .content .second-box {
+/* #earnings #menu1 .tab-content .content .second-box {
 	width: 47%;
 	margin-right: 5px;
-}
+} */
 
 #earnings #menu1 .tab-content .content .second-box,
 .three-box {
 	box-shadow: 0px 0px 39px -22px #000;
-	margin-top: 5px;
-	left: 6px;
+	/* margin-top: 5px; */
+	/* left: 6px; */
 }
 
 #earnings #menu1 .tab-content .content .second-box h3,
 .three-box h3 {
 	margin-bottom: 20px;
+	padding-top: 15px;
 	color: #6d6d6d;
 }
 
@@ -1343,9 +1361,9 @@ label {
 	font-size: 12px;
 }
 
-#earnings #menu3 div.box-carrer {
+/* #earnings #menu3 div.box-carrer {
 	height: 800px;
-}
+} */
 
 #earnings #menu3 h4 {
 	font-size: 16px;
@@ -1354,7 +1372,7 @@ label {
 #earnings #menu3 div.bold-green {
 	text-align: center;
 	font-size: 20px;
-	margin-top: 64px;
+	margin-top: 40px;
 	color: #00af3e;
 }
 
@@ -1369,6 +1387,7 @@ label {
 
 #earnings #menu3 small {
 	box-shadow: -4px 8px 33px -23px #000;
+	line-height: normal;
 }
 
 .st-earnings {
@@ -1761,7 +1780,7 @@ ul.blue .list-group-item.title {
 	border-radius: 55px;
 	color: #fff;
 	padding: 15px 2px 15px 0;
-	width: 305px;
+	width: 290px;
 	border: 2px solid #fff;
 	margin: 0 auto;
 }
@@ -1813,7 +1832,8 @@ p.company-txt-watch {
 
 p.company-txt-position {
 	width: 155px;
-	left: 165px;
+	left: 135px;
+	top: 16px;
 }
 
 
@@ -1938,17 +1958,17 @@ img {
 
 .BoxBlueOrange {
 	width: 100%;
-	height: 200px;
+	/* height: 200px; */
 	font-family: "Montserrat", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	color: #6a6a6a;
 	display: inline-block;
-	height: 960px;
+	/* height: 960px; */
 }
 
-.BoxBlueOrange div {
+/* .BoxBlueOrange div {
 	height: 750px;
-}
+} */
 
 .BoxBlueOrange h6,
 .BoxBlueOrange p {
@@ -1967,13 +1987,13 @@ img {
 	background-repeat: no-repeat, no-repeat;
 }
 
-.BoxPreco h6 {
-	top: 380px;
+.BoxPreco h6,.BoxOne h6, .BlocoDot h6.box {
+	padding-top: 380px;
 }
 
-.BoxPreco p {
-	top: 400px;
-}
+/* .BoxPreco p {
+	 top: 400px;
+} */
 
 .BoxOne {
 	background: url('../images/linhaAviao2.png'), url('../images/BlocoUnica.png');
@@ -1981,15 +2001,16 @@ img {
 	background-repeat: no-repeat, no-repeat;
 	background-size: 290px, 100%;
 	position: relative;
-	top: 185px;
+	margin-top: 186px;
+	/* top: 185px; */
 }
 
-.BoxOne h6 {
+/* .BoxOne h6 {
 	top: 380px;
-}
+} */
 
 .BoxOne p {
-	top: 400px;
+	/* top: 400px; */
 }
 
 .BlocoDot {
@@ -1998,23 +2019,24 @@ img {
 	background-repeat: no-repeat, no-repeat;
 	background-size: 290px, 100%;
 	position: relative;
-	top: 365px;
+	margin-top: 365px;
+	/* top: 365px; */
 }
 
 .BlocoDot h6.box {
-	top: 360px;
+	/* top: 360px; */
 	margin: 0px;
 }
 
 .BlocoDot p.box {
-	top: 380px;
+	/* top: 380px; */
 	margin: 0px;
 }
 
 .BlocoDot div.boxDescription {
 	position: relative;
-	height: 103px;
-	top: 406px;
+	/* height: 103px; */
+	padding: 20px 5px;
 	text-align: end;
 }
 
